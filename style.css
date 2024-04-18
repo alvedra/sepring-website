@@ -1,0 +1,342 @@
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    /* background-color: teal; */
+  }
+
+  nav {
+    padding: 10px 25px;
+    /* vertical, horizontal */
+    color: white;
+  }
+
+  .logo-text {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  /* Descendant selector */
+  .logo-text img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  .login-link {
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .header-background {
+    display: flex;
+  }
+
+  .header-left {
+    background-color: #16353D;
+    flex-basis: 56.66%;
+  }
+
+  .header-right {
+    background-color: teal;
+    flex-basis: 43.33%;
+  }
+
+  .slider-image {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .header-content-left {
+    color: white;
+    padding: 40px;
+    padding-left: 60px;
+  }
+
+  .header-content-you-can-hire {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .header-content-it-is-long {
+    font-size: 14px;
+  }
+
+  .button-about {
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+  }
+
+  .button-about:hover {
+    background-color: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+  }
+
+  .button-quote {
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+  }
+
+  .button-quote:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+
+
+  .header-content-right {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 60px;
+  }
+
+  section,
+  footer {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .experience-section {
+    display: flex;
+    gap: 10px;
+  }
+
+  .experience-section-left {
+    flex-basis: 40%;
+    padding: 10px;
+  }
+
+  .experience-section-right {
+    flex-basis: 60%;
+    padding: 10vw 10px;
+  }
+
+  .experience-content-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .experience-content-description {
+    font-size: 14px;
+  }
+
+  .button-read-more {
+    width: 80px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    background-color: tomato;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+  }
+
+  .button-read-more:hover {
+    background-color: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+  }
+
+  .button-hire {
+    width: 80px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: 0.2s;
+  }
+
+  .button-hire:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+
+
+  /* #################### CATEGORY SECTION ####################*/
+  .category-section {
+    background-color: teal;
+  }
+
+
+  /* Cara 1 - display inline block ke tiap item */
+  /* .category-container {
+  text-align: center;
+}
+
+.category-item {
+  width: 31%;
+  display: inline-block;
+} */
+
+  /* Cara 2 - display flex ke container item */
+  .category-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .category-item {
+    flex-basis: 33.33%;
+    text-align: center;
+  }
+
+
+  .category-image {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  /* *************** FOOTER **************** */
+  footer {
+    background-color: #1a2e35;
+    color: white;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .footer-nav-img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .footer-column {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+  }
+
+  .footer-column>div {
+    font-size: 16px;
+  }
+
+  .footer-column>div:nth-child(1) {
+    flex-basis: 20%;
+  }
+
+  .footer-column>div:nth-child(2) {
+    flex-basis: 25%;
+  }
+
+  .footer-column>div:nth-child(3) {
+    flex-basis: 20%;
+  }
+
+  .footer-column>div:nth-child(4) {
+    flex-basis: 20%;
+  }
+
+  .footer-column ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-column ul>li {
+    display: block;
+  }
+
+  .footer-column ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .footer-column>div:nth-child(4)>input {
+    padding: 5px;
+    margin: 5px 0;
+  }
+
+  .footer-column>div:nth-child(4)>button {
+    padding: 5px 20px;
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    border: solid 1px white;
+    margin: 5px 0;
+  }
+
+  .footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin: 25px 0;
+  }
+
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-contact img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
